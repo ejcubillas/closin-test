@@ -1,0 +1,68 @@
+
+.container {
+  background-color: #00103B;
+  width: 260px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s;
+}
+
+.sidebarItem {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.label {
+  margin-left: 12px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.activeLabel {
+  composes: label;
+  color: '#ffffff';
+}
+
+.inactiveLabel {
+  composes: label;
+  color: #5A647A;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.activeIcon {
+  composes: sidebarItem;
+  background-color: #081F5C;
+}
+
+.inactiveIcon {
+  composes: sidebarItem;
+  background-color: #00103B;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 60px;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .sidebarItem {
+    padding-left:0;
+    justify-content: center;
+    align-content: center;
+  }
+}

@@ -1,0 +1,40 @@
+.btn {
+  padding: 16px 28px;
+  background-color: #81EEF3;
+  border-radius: 40px;
+  font-size: 13px;
+  line-height: 15.73px;
+  color:#081F5C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter';
+}
+
+.btn > div {
+  margin-left: 8px;
+  margin-right: 8px;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.outline {
+  composes: btn;
+  background-color: #081F5C;
+  color:#81EEF3;
+  border: 1px solid #81EEF3;
+}
+
+.transparent {
+  composes: btn;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
